@@ -15,10 +15,14 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="icon" type="image/jpg" href="ImagemsIrlanda/Cidade.jpg">
+    <link rel="icon" type="image/png" href="ImagemsIrlanda/favicon.png">
+
+    <script src="javascript.js"></script>
+
+
 </head>
 
-<body>
+<body id="body">
     <!--Menu -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -71,8 +75,8 @@
     </div>
 </body>
 <!-- Cards-->
-<div class="container my-5" >
-    <div class="row align-items-center corverde">
+<div class="container my-5" id="mudaCor">
+    <div class="row align-items-center">
         <div class="col-sm-4">
             <div class="card">
                 <img src="ImagemsIrlanda/Ponte.jpeg" class="card-img-top" alt="...">
@@ -81,7 +85,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card’s
                         content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a class="btn btn-primary" onclick="mensagem()">Go somewhere</a>
                 </div>
             </div>
         </div>
@@ -93,7 +97,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card’s
                         content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a class="btn btn-primary" onclick="alerta()">Go somewhere</a>
                 </div>
             </div>
         </div>
@@ -105,7 +109,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card’s
                         content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a class="btn btn-primary" onclick="mudaCor()">Go somewhere</a>
                 </div>
             </div>
         </div>
@@ -173,7 +177,7 @@
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Quero receber e-mails.</label>
                         </div>
-                        <button type="button" class="btn btn-primary">Enviar</button>
+                        <button type="button" class="btn btn-primary" onclick="enviarFormulario()">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -183,5 +187,5 @@
         <p>© 2026 Trip Irlanda | Venha viajar conosco. Todos os direitos reservados.</p>
     </footer>
 
-
+    
 </html>
